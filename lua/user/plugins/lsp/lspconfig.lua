@@ -37,6 +37,11 @@ end
 -- used to enable autocompletion
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
+require('asm_lsp').setup {
+    capabilities = capabilities,
+    on_attach = on_attach
+}
+
 require('lspconfig').html.setup {
     capabilities = capabilities,
     on_attach = on_attach

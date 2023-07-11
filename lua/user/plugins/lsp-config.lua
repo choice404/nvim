@@ -15,7 +15,8 @@ mason_lspconfig.setup({
         'html',
         'cssls',
         'clangd',
-        'pyright'
+        'pyright',
+        'asm_lsp'
     }
 })
 

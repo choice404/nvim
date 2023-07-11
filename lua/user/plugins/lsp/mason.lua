@@ -23,7 +23,8 @@ mason_lspconfig.setup({
         'pyright',
         'sqlls',
         'bashls',
-        'lua_ls'
+        'lua_ls',
+        'asm_lsp'
     }
 })
 
@@ -39,3 +40,4 @@ require("lspconfig").pyright.setup {}
 require("lspconfig").sqlls.setup {}
 require("lspconfig").bashls.setup {}
 require("lspconfig").lua_ls.setup {}
+require("lspconfig").asm_lsp.setup {}
