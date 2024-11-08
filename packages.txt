@@ -1,0 +1,28 @@
+nvim-treesitter/nvim-treesitter
+nvim-treesitter/playground
+christoomey/vim-tmux-navigator
+inkarkat/vim-ReplaceWithRegister
+nvim-tree/nvim-tree.lua
+nvim-tree/nvim-web-devicons
+
+nvim-lualine/lualine.nvim
+ap/vim-css-color
+tpope/vim-commentary
+tpope/vim-surround
+tpope/vim-fugitive
+mbbill/undotree
+
+MunifTanJim/prettier.nvim
+jose-elias-alvarez/null-ls.nvim
+
+VonHeikemen/lsp-zero.nvim
+  williamboman/mason.nvim
+  williamboman/mason-lspconfig.nvim
+  neovim/nvim-lspconfig
+  hrsh7th/nvim-cmp
+  hrsh7th/cmp-nvim-lsp
+  L3MON4D3/LuaSnip
+
+
+ThePrimeagen/harpoon
+  nvim-lua/plenary.nvim
