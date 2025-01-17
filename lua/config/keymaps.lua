@@ -20,8 +20,8 @@ keymap.set(
   { noremap = true, silent = true, desc = "Replace current word" }
 )
 keymap.set("n", "Q", "<nop>")
-keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-keymap.set("n", "<C-j>", "<cmd>cnext<CR>zz")
+keymap.set("n", "<leader>xj", "<cmd>cnext<CR>zz")
+keymap.set("n", "<leader>xk", "<cmd>cnext<CR>zz")
 keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 keymap.set("n", "<leader>j", "<cmd>lnext<CR>zz")
 
