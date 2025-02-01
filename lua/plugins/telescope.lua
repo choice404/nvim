@@ -1,6 +1,8 @@
 return {
   {
     "nvim-telescope/telescope.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    cmd = "Telescope",
     keys = {
       -- add a keymap to browse plugin files
       -- stylua: ignore
