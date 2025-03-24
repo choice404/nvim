@@ -1,31 +1,19 @@
-if true then
-  return {}
-end
 return {
   {
     "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    event = "InsertEnter",
-    opts = {
-      suggestion = {
-        enabled = true,
-        auto_trigger = true,
-        keymap = { accept = false },
-      },
-    },
-  },
-  {
-    "zbirenbaum/copilot-cmp",
-    dependencies = "copilot.lua",
-    opts = {},
-    config = function(_, opts)
-      local copilot_cmp = require("copilot_cmp")
-      copilot_cmp.setup(opts)
-      -- attach cmp source whenever copilot attaches
-      -- fixes lazy-loading issues with the copilot cmp source
-      LazyVim.lsp.on_attach(function(client)
-        copilot_cmp._on_insert_enter({})
-      end, "copilot")
+    config = function()
+      require("copilot").setup({
+        suggeestion = {
+          enabled = true,
+          auto_trigger = true,
+          keymap = {
+            accept = "<C-j>",
+            next = "<C-n>",
+            dismis = "<C-d>",
+          },
+        },
+        panel = { enabled = false },
+      })
     end,
   },
 }

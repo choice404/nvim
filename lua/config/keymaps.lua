@@ -15,7 +15,7 @@ keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
 keymap.set(
   "n",
-  "<leader>ss",
+  "<leader>sz",
   [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
   { noremap = true, silent = true, desc = "Replace current word" }
 )
