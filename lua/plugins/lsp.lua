@@ -1,6 +1,10 @@
 return {
   {
     "neovim/nvim-lspconfig",
+    dependencies = {
+      "williamboman/mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+    },
     ---@class PluginLspOpts
     opts = {
       ---@type lspconfig.options
